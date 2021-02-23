@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'roboto';
+    src: url('../../fonts/roboto/roboto.ttf');
+}
+
+@font-face{
+    font-family: 'mono';
+    src: url('../../fonts/tech_mono/tech_mono.ttf');
+}
+
+html, body{
+    height: 100vh;
+}

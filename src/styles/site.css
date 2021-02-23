@@ -1,0 +1,77 @@
+.type-tag {
+  height: 100%;
+}
+
+.type-grass {
+  background-color: #49d354;
+}
+
+.app {
+  background: linear-gradient(180deg, #fceabb 0%, #f8b500 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app .main-container {
+  width: 80%;
+  height: 90%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+}
+.app .main-container .pkd-title {
+  font-family: "roboto";
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration-line: underline;
+  color: #1d1d1b;
+}
+.app .main-container .pkm-grid {
+  overflow: auto;
+  display: grid;
+  grid-template-rows: repeat(90, 33.5%);
+}
+@media only screen and (min-width: 801px) {
+  .app .main-container .pkm-grid {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .app .main-container .pkm-grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media only screen and (max-width: 680px) {
+  .app .main-container .pkm-grid {
+    grid-template-columns: 100%;
+  }
+}
+.app .main-container .pkm-grid .pkm-card {
+  width: 200px;
+  height: 230px;
+  border: 2px solid #000000;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app .main-container .pkm-grid .pkm-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid;
+}
+.app .main-container .pkm-grid .pkm-card .pkm-name {
+  padding-top: 5px;
+  text-align: center;
+}
+.app .pkm-footer {
+  margin-top: 20px;
+  width: 80%;
+  text-align: right;
+}
+
+/*# sourceMappingURL=site.css.map */
