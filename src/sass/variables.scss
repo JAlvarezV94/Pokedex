@@ -4,8 +4,12 @@ $font-color: #1d1d1b;
 $title: 45px;
 
 @mixin grid-columns(){
-    @media only screen and (min-width: 801px) {
+    @media only screen and (min-width: 1031px) {
         grid-template-columns: repeat(4, 25%);
+    }
+
+    @media only screen and (max-width: 1030px) {
+        grid-template-columns: repeat(3, 33.5%);
     }
     
     @media only screen and (max-width: 800px){
