@@ -29,7 +29,6 @@
         .pkm-grid{
             overflow: auto;
             display: grid;
-            grid-template-rows: repeat(999, 33.5%);
             @include grid-columns();
 
             .pkm-card{
@@ -39,6 +38,7 @@
                 margin: 0 auto;
                 border-radius: 5px;
                 overflow: hidden;
+                margin-top: 10px;
 
                 img{
                     display: block;
